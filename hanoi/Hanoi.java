@@ -10,7 +10,7 @@ public class Hanoi {
 
 	public static void main(String[] args) {
 		long st = System.currentTimeMillis();
-		hanoi(20, 1, 2);
+		hanoi(Integer.parseInt(args[0]), 1, 2);
 		long t = System.currentTimeMillis() - st;
 		System.out.println(t + " ms");
 	}

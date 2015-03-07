@@ -8,6 +8,6 @@ function hanoi(n, a, b) {
 }
 
 var st = new Date().getTime();
-hanoi(20, 1, 2);
+hanoi(process.argv[2]*1, 1, 2);
 var t = new Date().getTime() - st;
 console.log(t + " ms");

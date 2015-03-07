@@ -6,9 +6,12 @@
       hanoi($n-1, $temp, $b);
     }
   }
+  
+  $n = $argv[1];
 
   $st = microtime(true);
-  hanoi(20, 1, 2);
+  hanoi($n, 1, 2);
   $t = round((microtime(true) - $st) * 1000);
+
   echo $t." ms\n";
 ?>

@@ -1,16 +1,23 @@
-echo "-- C (gcc) --"
+echo "--- C (gcc) --"
 gcc hanoi.c -o hanoi.cout
-./hanoi.cout
+./hanoi.cout $1
 
-echo "-- Java --"
+echo "--- Java -----"
 javac hanoi.java
-java Hanoi
+java Hanoi $1
 
-echo "-- node.js --"
-node hanoi.js
+echo "--- node.js --"
+node hanoi.js $1
 
-echo "-- python --"
-python hanoi.py
+echo "--- go -------"
+go run hanoi.go $1
 
-echo "-- php --"
-php hanoi.php
+echo "--- python ---"
+python hanoi.py $1
+
+echo "--- php ------"
+php hanoi.php $1
+
+echo "----- r ------"
+R CMD BATCH --vanilla --slave "--args $1" hanoi.r hanoi.rout
+cat hanoi.rout

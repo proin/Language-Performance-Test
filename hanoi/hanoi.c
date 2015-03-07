@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <sys/time.h>
+#include <stdlib.h>
 
 void hanoi(int n, int a, int b) {
   int temp;
@@ -17,9 +18,11 @@ long long current_timestamp() {
     return milliseconds;
 }
 
-int main() {
+int main(int argc, char **argv) {
+  int n = atoi(argv[1]);
+
   long st = current_timestamp();
-  hanoi(20,1,2);
+  hanoi(n,1,2);
   long t = current_timestamp() - st;
 
   printf("%ld ms\n",t);

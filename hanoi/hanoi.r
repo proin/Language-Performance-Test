@@ -6,4 +6,7 @@ hanoi <- function(n, a, b) {
   }
 }
 
-hanoi(20, 1, 2)
+args=(commandArgs(TRUE))
+n = as.numeric(args[1])
+
+hanoi(n, 1, 2)
