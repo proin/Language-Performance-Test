@@ -1,0 +1,16 @@
+echo "-- C (gcc) --"
+gcc hanoi.c -o hanoi.cout
+./hanoi.cout
+
+echo "-- Java --"
+javac hanoi.java
+java Hanoi
+
+echo "-- node.js --"
+node hanoi.js
+
+echo "-- python --"
+python hanoi.py
+
+echo "-- php --"
+php hanoi.php
