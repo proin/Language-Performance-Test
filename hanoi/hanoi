@@ -1,5 +1,5 @@
 echo "--- C (gcc) --"
-gcc hanoi.c -o hanoi.cout
+gcc hanoi.c -o2 hanoi.cout
 ./hanoi.cout $1
 
 echo "--- Java -----"
